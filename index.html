@@ -1,1381 +1,642 @@
-<!DOCTYPE html>
-
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Materialize CSS -->
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
+  <!-- End Google Tag Manager -->
 
-  <link rel="stylesheet"
-    href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-
-  <!-- Font Awesome -->
-
-  <link rel="stylesheet"
-    href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-
-  <!-- Custom Styles -->
-
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="/assets/css/style.css" />
 
   <title>Kingchrist Obosu | Geoscience & Data</title>
 
-  <!-- Meta -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
 
+    gtag('js', new Date());
+
+    gtag('config', 'UA-126939217-2');
+  </script>
+
+  <!-- Open Graph-->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kingchrist Obosu | Geoscience & Data" />
+  <meta property="og:description" content="Geoscience, groundwater, geochemistry, geophysics and data-driven research." />
+  <meta property="og:url" content="https://varadbhogayata.github.io/" />
+  <meta property="og:site_name" content="Kingchrist Obosu | Geoscience & Data" />
+  <meta property="article:publisher" content="https://varadbhogayata.github.io/" />
+  <meta property="og:image" content="https://varadbhogayata.github.io/examples/preview.JPG" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@varad_bhogayata" />
+  <meta name="twitter:title" content="Kingchrist Obosu | Geoscience & Data" />
+  <meta name="twitter:description" content="Geoscience, groundwater, geochemistry, geophysics and data-driven research." />
+  <meta name="twitter:url" content="https://twitter.com/varad_bhogayata" />
   <meta name="author" content="Kingchrist Obosu" />
-  <meta name="description"
-    content="Kingchrist Obosu — geoscience, groundwater, hydrogeochemistry, geophysics, GIS and data-driven research." />
-  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Geoscience graduate interested in groundwater, geochemistry, geophysics, GIS and data-driven approaches to environmental and subsurface problems." />
+
+  <!-- Favicon - unchanged -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
   <meta name="theme-color" content="#ffffff" />
+  <meta name="robots" content="index, follow" />
+  <!-- Google Site Verification for indexing -->
+  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
 </head>
 
 <body>
 
-  <!-- Navigation Menu -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
 
-  <!-- Desktop Navigation -->
-
+  <!-- Navigation Menu-->
+  <!-- Nav class 1 -->
   <nav class="hide-on-small-only">
     <ul class="side-nav fixed section table-of-contents">
 
-```
-  <li class="logo">
-    <a id="logo-container"
-      aria-label="Navigate to the beginning of the page"
-      href="#intro"
-      class="brand-logo grey-blue-text">
+      <li class="logo">
+        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+          class="brand-logo grey-blue-text">
+          <img src="/assets/img/passport-new.jpg" class="circle img-responsive profile-pic" alt="avatar">
+        </a>
+      </li>
 
-      <img src="assets/img/profile.jpg"
-        class="circle img-responsive profile-pic"
-        alt="Kingchrist Obosu">
-    </a>
-  </li>
+      <!-- Interests -->
+      <li class="bold">
+        <a aria-label="Navigate to the Interests section" href="#interests"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>Interests</span></a>
+      </li>
 
-  <li class="bold">
-    <a aria-label="Navigate to the Interests section"
-      href="#interests"
-      class="waves-effect waves-dark teal-text">
-      <i class="mdi-action-explore small"></i>
-      <span>Interests</span>
-    </a>
-  </li>
+      <!-- Experience -->
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
 
-  <li class="bold">
-    <a aria-label="Navigate to the Experience section"
-      href="#experience"
-      class="waves-effect waves-dark teal-text">
-      <i class="mdi-action-trending-up small"></i>
-      <span>Experience</span>
-    </a>
-  </li>
+      <!-- Research -->
+      <li class="bold">
+        <a aria-label="Navigate to the Research section" href="#research"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Research</span></a>
+      </li>
 
-  <li class="bold">
-    <a aria-label="Navigate to the Education section"
-      href="#education"
-      class="waves-effect waves-dark teal-text">
-      <i class="mdi-social-school small"></i>
-      <span>Education</span>
-    </a>
-  </li>
+      <!-- Skills -->
+      <li class="bold">
+        <a aria-label="Navigate to the Skills section" href="#skills"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
 
-  <li class="bold">
-    <a aria-label="Navigate to the Research section"
-      href="#research"
-      class="waves-effect waves-dark teal-text">
-      <i class="mdi-av-my-library-books small"></i>
-      <span>Research</span>
-    </a>
-  </li>
+      <!-- Education -->
+      <li class="bold">
+        <a aria-label="Navigate to the Education section" href="#education"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
 
-  <li class="bold">
-    <a aria-label="Navigate to the Projects section"
-      href="#projects"
-      class="waves-effect waves-dark teal-text">
-      <i class="mdi-file-folder-open small"></i>
-      <span>Projects</span>
-    </a>
-  </li>
+      <!-- Projects -->
+      <li class="bold">
+        <a aria-label="Navigate to the Projects section" href="#projects"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
 
-  <li class="bold">
-    <a aria-label="Navigate to the Find Me section"
-      href="#findme"
-      class="waves-effect waves-dark teal-text">
-      <i class="mdi-content-mail small"></i>
-      <span>Find Me</span>
-    </a>
-  </li>
+      <!-- Find Me -->
+      <li class="bold">
+        <a aria-label="Navigate to the Find Me section" href="#contact"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Find Me</span></a>
+      </li>
 
-</ul>
-```
+      <!-- Resume -->
+      <li class="bold">
+        <a aria-label="Open Resume in a new tab"
+          href="https://varadbhogayata.github.io/assets/resume/Varad_Bhogayata_Resume.pdf"
+          target="_blank"
+          class="waves-effect waves-dark teal-text"><i
+          class="mdi-file-folder-open small"></i><span>Resume</span></a>
+      </li>
 
+    </ul>
   </nav>
 
-  <!-- Mobile Navigation -->
 
-  <nav class="hide-on-large-only trigger z-depth-1">
+  <!-- Nav class 2 -->
+  <nav class="hide-on-large only trigger z-depth-1">
+    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
+      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 
-```
-<a aria-label="Toggle visibility of the mobile navbar"
-  href="#"
-  data-activates="slide-out"
-  class="button-collapse">
-  <i class="mdi-navigation-menu"></i>
-</a>
-
-<div class="name-title">
-  <a id="name"
-    aria-label="Navigate to the beginning of the page"
-    href="#intro"
-    class="teal-text">
-    Kingchrist Obosu
-  </a>
-
-  <span class="black-text">Geoscience & Data</span>
-</div>
-```
-
+    <div class="name-title">
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#"
+        class="teal-text">Kingchrist Obosu</a>
+      <span class="black-text">Geoscience & Data</span>
+    </div>
   </nav>
 
-  <!-- Mobile Side Navigation -->
 
-  <nav class="hide-on-large-only">
+  <!-- Nav class 3 -->
+  <nav class="hide-on-large only">
+    <ul id="slide-out" class="side-nav">
 
-```
-<ul id="slide-out" class="side-nav">
+      <li class="bold">
+        <a aria-label="Navigate to the Interests section" href="#interests"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>Interests</span></a>
+      </li>
 
-  <li class="bold">
-    <a href="#interests"
-      class="waves-effect waves-dark teal-text">
-      <i class="mdi-action-explore small"></i>
-      <span>Interests</span>
-    </a>
-  </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
 
-  <li class="bold">
-    <a href="#experience"
-      class="waves-effect waves-dark teal-text">
-      <i class="mdi-action-trending-up small"></i>
-      <span>Experience</span>
-    </a>
-  </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Research section" href="#research"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Research</span></a>
+      </li>
 
-  <li class="bold">
-    <a href="#education"
-      class="waves-effect waves-dark teal-text">
-      <i class="mdi-social-school small"></i>
-      <span>Education</span>
-    </a>
-  </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Skills section" href="#skills"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
 
-  <li class="bold">
-    <a href="#research"
-      class="waves-effect waves-dark teal-text">
-      <i class="mdi-av-my-library-books small"></i>
-      <span>Research</span>
-    </a>
-  </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Education section" href="#education"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
 
-  <li class="bold">
-    <a href="#projects"
-      class="waves-effect waves-dark teal-text">
-      <i class="mdi-file-folder-open small"></i>
-      <span>Projects</span>
-    </a>
-  </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Projects section" href="#projects"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
 
-  <li class="bold">
-    <a href="#findme"
-      class="waves-effect waves-dark teal-text">
-      <i class="mdi-content-mail small"></i>
-      <span>Find Me</span>
-    </a>
-  </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Find Me section" href="#contact"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Find Me</span></a>
+      </li>
 
-</ul>
-```
+      <li class="bold">
+        <a aria-label="Open Resume in a new tab"
+          href="https://varadbhogayata.github.io/assets/resume/Varad_Bhogayata_Resume.pdf"
+          target="_blank"
+          class="waves-effect waves-dark teal-text"><i
+          class="mdi-file-folder-open small"></i><span>Resume</span></a>
+      </li>
 
+    </ul>
   </nav>
 
-  <!-- Main Content -->
 
+  <!-- Main Content-->
   <main>
 
-```
-<!-- ========================================================= -->
-<!-- INTRO -->
-<!-- ========================================================= -->
+    <!-- First Section: Intro -->
+    <section id="intro" class="section scrollspy full-height">
+      <div class="overlay"></div>
 
-<section id="intro" class="section scrollspy full-height">
+      <div class="container">
+        <div class="col-md-9">
 
-  <div class="overlay"></div>
+          <div class="content section-padding valign"
+            style="margin-left: 10%; margin-top: 50px;">
 
-  <div class="container">
+            <div class="caption">
 
-    <div class="col-md-9">
+              <h2>Hi, I'm <span class="teal">Kingchrist Obosu.</span></h2>
 
-      <div class="content section-padding valign"
-        style="margin-left: 10%; margin-top: 50px;">
+              <h5 style="color:#fff">
+                <span class="typing" style="font-weight: 300; color:#004d40"></span>
+              </h5>
 
-        <div class="caption">
+              <h5>
+                I am interested in understanding the Earth through
+                field observations, geochemical data, geophysics and
+                data-driven approaches.
+              </h5>
 
-          <h2>
-            Hi, I'm
-            <span class="teal">Kingchrist Obosu.</span>
-          </h2>
+            </div>
 
-          <h5 style="color:#fff">
-            Exploring
-            <span class="typing"
-              style="font-weight: 300; color:#004d40"></span>
-          </h5>
+            <div class="social">
 
-          <h5>
-            I work at the intersection of geoscience, environmental
-            systems and data. My interests centre on understanding
-            groundwater, water–rock interactions and subsurface
-            processes through field observations, geochemical analysis,
-            geophysics, GIS and data-driven methods.
-          </h5>
+              <a href="https://github.com/" target="_blank">
+                <button class="icon-btn github">
+                  <i class="fa fa-github"></i>
+                </button>
+              </a>
 
-        </div>
+            </div>
 
+            <div class='buttons'>
+              <a href="#interests" class="readme">Read More</a>
+              <a href="#contact" class="contactme">Find Me</a>
+            </div>
 
-        <div class="social">
-
-          <a href="https://github.com/"
-            target="_blank"
-            aria-label="GitHub">
-
-            <button class="icon-btn github">
-              <i class="fa fa-github"></i>
-            </button>
-
-          </a>
-
-          <a href="mailto:your-email@example.com"
-            aria-label="Email">
-
-            <button class="icon-btn">
-              <i class="fa fa-envelope"></i>
-            </button>
-
-          </a>
+          </div>
 
         </div>
-
-
-        <div class="buttons">
-
-          <a href="#interests"
-            class="readme">
-            Explore
-          </a>
-
-          <a href="#findme"
-            class="contactme">
-            Find Me
-          </a>
-
-        </div>
-
       </div>
+    </section>
 
-    </div>
 
-  </div>
+    <!-- Second Section: Interests -->
+    <section id="interests" class="section scrollspy">
 
-</section>
+      <h3 class="page-title white-text teal">Interests</h3>
 
+      <div class="container flow-text">
 
+        <p>
+          My interests lie at the intersection of geoscience, environmental
+          systems and data. I am particularly interested in understanding
+          how geological materials interact with fluids and how these
+          interactions influence groundwater quality and subsurface systems.
+        </p>
 
-<!-- ========================================================= -->
-<!-- INTERESTS -->
-<!-- ========================================================= -->
-
-<section id="interests" class="section scrollspy">
-
-  <h3 class="page-title white-text teal">
-    Interests
-  </h3>
-
-  <div class="container">
-
-    <div class="row">
-
-
-      <!-- Interest 1 -->
-      <div class="col s12 m6 l4">
-
-        <div class="card">
-
-          <div class="card-content">
-
-            <span class="card-title teal-text">
-              Groundwater & Hydrogeochemistry
-            </span>
-
-            <p>
-              Understanding groundwater chemistry, water quality,
-              geochemical processes and the interaction between
-              groundwater and geological materials.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- Interest 2 -->
-      <div class="col s12 m6 l4">
-
-        <div class="card">
-
-          <div class="card-content">
-
-            <span class="card-title teal-text">
-              Water–Rock Interactions
-            </span>
-
-            <p>
-              Exploring how fluid movement and mineral reactions
-              influence groundwater composition and subsurface
-              geochemical processes.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- Interest 3 -->
-      <div class="col s12 m6 l4">
-
-        <div class="card">
-
-          <div class="card-content">
-
-            <span class="card-title teal-text">
-              Environmental Geochemistry
-            </span>
-
-            <p>
-              Investigating contaminants, their sources and
-              behaviour in groundwater and their implications for
-              environmental and human health.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- Interest 4 -->
-      <div class="col s12 m6 l4">
-
-        <div class="card">
-
-          <div class="card-content">
-
-            <span class="card-title teal-text">
-              Geophysics
-            </span>
-
-            <p>
-              Applying electrical resistivity, dipole–dipole and
-              magnetotelluric methods to investigate subsurface
-              conditions and support groundwater exploration.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- Interest 5 -->
-      <div class="col s12 m6 l4">
-
-        <div class="card">
-
-          <div class="card-content">
-
-            <span class="card-title teal-text">
-              GIS & Spatial Analysis
-            </span>
-
-            <p>
-              Using spatial analysis and thematic mapping to
-              understand the distribution of environmental and
-              geological phenomena.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- Interest 6 -->
-      <div class="col s12 m6 l4">
-
-        <div class="card">
-
-          <div class="card-content">
-
-            <span class="card-title teal-text">
-              Data & Machine Learning
-            </span>
-
-            <p>
-              Applying statistical analysis, machine learning and
-              visualisation to extract patterns from geoscientific
-              and environmental datasets.
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- ========================================================= -->
-<!-- EXPERIENCE -->
-<!-- ========================================================= -->
-
-<section id="experience" class="section scrollspy">
-
-  <h3 class="page-title white-text teal">
-    Experience
-  </h3>
-
-  <div class="container">
-
-
-    <!-- Field Experience -->
-    <div class="card">
-
-      <div class="card-content">
-
-        <div class="row">
-
-          <div class="col s12 m2">
-
-            <img
-              alt="Field geology"
-              src="assets/img/fieldwork.jpg"
-              class="responsive-img center-block" />
-
-          </div>
-
-          <div class="col s12 m10">
-
-            <p>
-              <span class="card-title">
-                Field Geoscience
-              </span>
-            </p>
-
-          </div>
-
-        </div>
-
-        <div class="role brown-text text-darken-2">
-          Geological & Geophysical Field Work
-        </div>
+        <p>
+          My current interests include:
+        </p>
 
         <ul>
-
-          <li>
-            Participated in geological and geophysical investigations
-            across several locations in Ghana.
-          </li>
-
-          <li>
-            Worked on electrical resistivity, dipole–dipole and
-            magnetotelluric surveys for subsurface investigations.
-          </li>
-
-          <li>
-            Supported groundwater exploration and borehole
-            investigations through geophysical interpretation.
-          </li>
-
-          <li>
-            Participated in more than ten supervised borehole
-            investigations.
-          </li>
-
-          <li>
-            Worked with field observations, geological information
-            and geophysical datasets to support interpretation.
-          </li>
-
+          <li>Groundwater geochemistry and hydrogeochemistry</li>
+          <li>Water-rock interactions</li>
+          <li>Groundwater contaminants and remediation</li>
+          <li>Environmental geochemistry</li>
+          <li>Exploration geophysics</li>
+          <li>GIS and geospatial analysis</li>
+          <li>Data-driven geoscience and machine learning</li>
+          <li>Subsurface energy systems and fluid-mineral interactions</li>
         </ul>
 
       </div>
 
-      <div class="card-action">
-        <span>Geological & Environmental Field Investigations | Ghana</span>
-      </div>
-
-    </div>
+    </section>
 
 
+    <!-- Third Section: Experience -->
+    <section id="experience" class="section scrollspy">
 
-    <!-- Water Quality -->
-    <div class="card">
+      <h3 class="page-title white-text teal">Experience</h3>
 
-      <div class="card-content">
+      <div class="container">
 
-        <div class="row">
-
-          <div class="col s12 m2">
-
-            <img
-              alt="Water sampling"
-              src="assets/img/water-sampling.jpg"
-              class="responsive-img center-block" />
-
-          </div>
-
-          <div class="col s12 m10">
-
-            <p>
-              <span class="card-title">
-                Groundwater & Water Quality
-              </span>
-            </p>
-
-          </div>
-
-        </div>
-
-        <div class="role brown-text text-darken-2">
-          Sampling, Analysis & Assessment
-        </div>
-
-        <ul>
-
-          <li>
-            Participated in groundwater sampling and water-quality
-            investigations involving boreholes across Ghana.
-          </li>
-
-          <li>
-            Worked with field measurements and laboratory water
-            chemistry data.
-          </li>
-
-          <li>
-            Supported assessment of major ions, trace metals,
-            physicochemical parameters and microbiological indicators.
-          </li>
-
-          <li>
-            Applied statistical and geospatial methods to interpret
-            groundwater-quality datasets.
-          </li>
-
-        </ul>
-
-      </div>
-
-      <div class="card-action">
-        <span>Groundwater & Environmental Assessment | Ghana</span>
-      </div>
-
-    </div>
-
-
-
-    <!-- Data -->
-    <div class="card">
-
-      <div class="card-content">
-
-        <div class="row">
-
-          <div class="col s12 m2">
-
-            <img
-              alt="Geoscience data analysis"
-              src="assets/img/data-analysis.jpg"
-              class="responsive-img center-block" />
-
-          </div>
-
-          <div class="col s12 m10">
-
-            <p>
-              <span class="card-title">
-                Geoscience Data Analysis
-              </span>
-            </p>
-
-          </div>
-
-        </div>
-
-        <div class="role brown-text text-darken-2">
-          Data Science & Spatial Analysis
-        </div>
-
-        <ul>
-
-          <li>
-            Analysed geoscientific and environmental datasets using
-            Python and statistical methods.
-          </li>
-
-          <li>
-            Used GIS for spatial analysis, thematic mapping and
-            visualisation.
-          </li>
-
-          <li>
-            Applied multivariate statistical techniques including
-            principal component analysis and clustering.
-          </li>
-
-          <li>
-            Developed data-driven workflows for environmental and
-            geoscience applications.
-          </li>
-
-        </ul>
-
-      </div>
-
-      <div class="card-action">
-        <span>Geoscience Data & Spatial Analysis</span>
-      </div>
-
-    </div>
-
-
-  </div>
-
-</section>
-
-
-
-<!-- ========================================================= -->
-<!-- EDUCATION -->
-<!-- ========================================================= -->
-
-<section id="education" class="section scrollspy">
-
-  <h3 class="page-title white-text teal">
-    Education
-  </h3>
-
-  <div class="container">
-
-    <div class="row">
-
-
-      <div class="col s12 m8 l8">
-
+        <!-- Field and Geoscience Experience -->
         <div class="card">
 
           <div class="card-content">
 
-            <p>
+            <div class="row">
 
-              <span class="card-title">
+              <div class="col s12 m2">
+                <img alt="Geoscience fieldwork"
+                  src="/assets/img/exp-zhiffy-logo-1.webp"
+                  class="responsive-img center-block" />
+              </div>
 
-                <a href="https://umat.edu.gh/"
-                  target="_blank"
-                  class="teal-text hoverline">
+              <div class="col s12 m10">
 
-                  University of Mines and Technology
+                <p>
+                  <span class="card-title">
+                    <a href="#experience"
+                      class="teal-text hoverline">
+                      Geoscience Field Experience
+                    </a>
+                  </span>
+                </p>
 
-                </a>
+              </div>
 
-              </span>
+            </div>
 
-            </p>
-
-            <p class="brown-text">
-              Tarkwa, Ghana
-            </p>
-
-            <p>
-
-              <b>Degree:</b>
-              BSc Geological Engineering
-
-              <br>
-
-              <b>Classification:</b>
-              Second Class Upper
-
-              <br>
-
-              <b>CWA:</b>
-              75.4
-
-            </p>
+            <div class="role brown-text text-darken-2">
+              Geological and Geophysical Field Work
+            </div>
 
             <ul>
 
-              <p>
-                <b>Academic focus:</b>
-              </p>
-
               <li>
-                Geological Engineering
+                Participated in more than 20 geophysical surveys and
+                borehole investigations across Wassa East, Shama,
+                Twifo Heman, Wassa Amenfi West and Wassa Amenfi Central.
               </li>
 
               <li>
-                Geochemistry
-              </li>
-
-              <li>
-                Geophysics
-              </li>
-
-              <li>
-                Environmental Geoscience
-              </li>
-
-              <li>
-                Groundwater and water resources
-              </li>
-
-            </ul>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- ========================================================= -->
-<!-- RESEARCH -->
-<!-- ========================================================= -->
-
-<section id="research" class="section scrollspy">
-
-  <h3 class="page-title white-text teal">
-    Research
-  </h3>
-
-  <div class="container">
-
-
-    <!-- Main Research -->
-    <div class="card">
-
-      <div class="card-content">
-
-        <span class="card-title teal-text">
-          Groundwater Hydrogeochemistry in Wassa East, Ghana
-        </span>
-
-        <p>
-
-          My research has focused on understanding groundwater
-          chemistry, water–rock interactions and water-quality
-          conditions in the Wassa East area of Ghana.
-
-        </p>
-
-        <br>
-
-        <ul>
-
-          <li>
-            Characterisation of groundwater hydrogeochemistry.
-          </li>
-
-          <li>
-            Assessment of major ions and trace-metal contamination.
-          </li>
-
-          <li>
-            Evaluation of groundwater quality using water-quality
-            indices.
-          </li>
-
-          <li>
-            Human-health risk assessment associated with selected
-            contaminants.
-          </li>
-
-          <li>
-            Application of GIS and spatial interpolation to
-            visualise groundwater-quality patterns.
-          </li>
-
-          <li>
-            Multivariate analysis using PCA, factor analysis and
-            clustering.
-          </li>
-
-        </ul>
-
-      </div>
-
-    </div>
-
-
-
-    <!-- Publication -->
-    <div class="card">
-
-      <div class="card-content">
-
-        <span class="card-title teal-text">
-          Publication
-        </span>
-
-        <p>
-
-          <b>
-            Understanding the hydrogeochemistry of groundwater
-            quality in Wassa East area of Ghana: implications for
-            health risk assessment
-          </b>
-
-        </p>
-
-        <br>
-
-        <p>
-
-          Seidu J., Obosu K.J., Frimpong K.A., Sebbeh-Newton S.,
-          Mensah E.K., Ewusi A., Benyarku E. (2026).
-
-        </p>
-
-        <br>
-
-        <p>
-          <i>
-            Frontiers in Water
-          </i>
-        </p>
-
-        <br>
-
-        <a href="https://doi.org/10.3389/frwa.2026.1766598"
-          target="_blank"
-          class="waves-effect waves-light btn teal">
-
-          <i class="fa fa-external-link"></i>
-          View Publication
-
-        </a>
-
-      </div>
-
-    </div>
-
-
-
-    <!-- Research Direction -->
-    <div class="card">
-
-      <div class="card-content">
-
-        <span class="card-title teal-text">
-          Research Direction
-        </span>
-
-        <p>
-
-          I am interested in using geochemical, geophysical,
-          spatial and data-driven approaches to understand
-          subsurface systems.
-
-        </p>
-
-        <br>
-
-        <p>
-
-          Current areas of interest include groundwater
-          contamination, water–rock interactions, reactive
-          geochemistry, subsurface fluid–mineral interactions,
-          environmental remediation and data-driven approaches
-          to geoscience.
-
-        </p>
-
-      </div>
-
-    </div>
-
-
-  </div>
-
-</section>
-
-
-
-<!-- ========================================================= -->
-<!-- PROJECTS -->
-<!-- ========================================================= -->
-
-<section id="projects" class="section scrollspy">
-
-  <h3 class="page-title white-text teal">
-    Projects
-  </h3>
-
-  <div class="container">
-
-    <div class="row">
-
-
-      <!-- Project 1 -->
-      <div class="col s12 m6 l4">
-
-        <div class="card medium">
-
-          <div class="card-image waves-effect waves-block waves-light">
-
-            <img
-              alt="Groundwater quality mapping"
-              src="assets/img/project-groundwater.jpg"
-              style="height: 100%; width: 100%"
-              class="activator" />
-
-          </div>
-
-          <div class="card-content">
-
-            <span class="card-title activator teal-text hoverline">
-
-              Groundwater Quality Mapping
-
-              <i class="mdi-navigation-more-vert right"></i>
-
-            </span>
-
-            <p>
-              GIS-based analysis and visualisation of groundwater
-              quality.
-            </p>
-
-          </div>
-
-          <div class="card-reveal">
-
-            <span class="card-title grey-text">
-
-              <small>Project Details</small>
-
-              <i class="mdi-navigation-close right"></i>
-
-            </span>
-
-            <ul>
-
-              <li>
-                Spatial analysis of groundwater-quality parameters.
-              </li>
-
-              <li>
-                Development of thematic groundwater-quality maps.
-              </li>
-
-              <li>
-                Application of interpolation techniques for spatial
-                visualisation.
-              </li>
-
-              <li>
-                <b>Tools:</b>
-                ArcGIS, Python, GIS
-              </li>
-
-            </ul>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- Project 2 -->
-      <div class="col s12 m6 l4">
-
-        <div class="card medium">
-
-          <div class="card-image waves-effect waves-block waves-light">
-
-            <img
-              alt="Water quality data analysis"
-              src="assets/img/project-water-quality.jpg"
-              style="height: 100%; width: 100%"
-              class="activator" />
-
-          </div>
-
-          <div class="card-content">
-
-            <span class="card-title activator teal-text hoverline">
-
-              Water Quality Data Analysis
-
-              <i class="mdi-navigation-more-vert right"></i>
-
-            </span>
-
-            <p>
-              Statistical analysis of groundwater chemistry and
-              environmental data.
-            </p>
-
-          </div>
-
-          <div class="card-reveal">
-
-            <span class="card-title grey-text">
-
-              <small>Project Details</small>
-
-              <i class="mdi-navigation-close right"></i>
-
-            </span>
-
-            <ul>
-
-              <li>
-                Data cleaning and exploratory analysis.
-              </li>
-
-              <li>
-                Correlation and multivariate statistical analysis.
-              </li>
-
-              <li>
-                PCA, factor analysis and clustering.
-              </li>
-
-              <li>
-                <b>Tools:</b>
-                Python, Pandas, NumPy, Matplotlib
-              </li>
-
-            </ul>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- Project 3 -->
-      <div class="col s12 m6 l4">
-
-        <div class="card medium">
-
-          <div class="card-image waves-effect waves-block waves-light">
-
-            <img
-              alt="Geophysical investigation"
-              src="assets/img/project-geophysics.jpg"
-              style="height: 100%; width: 100%"
-              class="activator" />
-
-          </div>
-
-          <div class="card-content">
-
-            <span class="card-title activator teal-text hoverline">
-
-              Subsurface Investigation
-
-              <i class="mdi-navigation-more-vert right"></i>
-
-            </span>
-
-            <p>
-              Geophysical methods for subsurface characterisation
-              and groundwater exploration.
-            </p>
-
-          </div>
-
-          <div class="card-reveal">
-
-            <span class="card-title grey-text">
-
-              <small>Project Details</small>
-
-              <i class="mdi-navigation-close right"></i>
-
-            </span>
-
-            <ul>
-
-              <li>
-                Electrical resistivity investigations.
-              </li>
-
-              <li>
-                Dipole–dipole surveys.
-              </li>
-
-              <li>
-                Magnetotelluric investigations.
-              </li>
-
-              <li>
-                Interpretation of subsurface structures for
+                Worked with resistivity, dipole-dipole and magnetotelluric
+                methods to investigate subsurface conditions and support
                 groundwater exploration.
               </li>
 
+              <li>
+                Supported more than 10 supervised borehole projects,
+                including field observations and interpretation of
+                subsurface information.
+              </li>
+
+              <li>
+                Assisted with groundwater sampling and field water-quality
+                measurements using colorimeters, photometers and incubators.
+              </li>
+
+              <li>
+                <b>Tools:</b> Geophysical interpretation, GIS,
+                ArcGIS, Leapfrog Geo, Rocscience Phase2
+              </li>
+
             </ul>
 
           </div>
 
+          <div class="card-action">
+            <span>Geoscience Field Work | Ghana</span>
+          </div>
+
         </div>
 
-      </div>
 
-
-
-      <!-- Project 4 -->
-      <div class="col s12 m6 l4">
-
-        <div class="card medium">
-
-          <div class="card-image waves-effect waves-block waves-light">
-
-            <img
-              alt="Geoscience data science"
-              src="assets/img/project-data-science.jpg"
-              style="height: 100%; width: 100%"
-              class="activator" />
-
-          </div>
+        <!-- Water Treatment Experience -->
+        <div class="card">
 
           <div class="card-content">
 
-            <span class="card-title activator teal-text hoverline">
+            <div class="row">
 
-              Geoscience Data Science
+              <div class="col s12 m2">
+                <img alt="Water treatment"
+                  src="/assets/img/exp-meditab-logo-500x500.jpg"
+                  class="responsive-img center-block" />
+              </div>
 
-              <i class="mdi-navigation-more-vert right"></i>
+              <div class="col s12 m10">
 
-            </span>
+                <p>
+                  <span class="card-title">
+                    <a href="#experience"
+                      class="teal-text hoverline">
+                      Water Quality & Treatment
+                    </a>
+                  </span>
+                </p>
 
-            <p>
-              Applying data science methods to geological and
-              environmental datasets.
-            </p>
+              </div>
 
-          </div>
+            </div>
 
-          <div class="card-reveal">
-
-            <span class="card-title grey-text">
-
-              <small>Project Details</small>
-
-              <i class="mdi-navigation-close right"></i>
-
-            </span>
+            <div class="role brown-text text-darken-2">
+              Water Quality Assessment and Treatment
+            </div>
 
             <ul>
 
               <li>
-                Data preprocessing and exploratory analysis.
+                Worked with groundwater quality data to assess
+                physicochemical and chemical characteristics of water.
               </li>
 
               <li>
-                Statistical modelling and machine learning.
+                Supported water treatment activities involving
+                Katalox-Light, Dosatron systems, UV treatment and
+                chlorination.
               </li>
 
               <li>
-                Data visualisation and reporting.
+                Worked with field and laboratory measurements to
+                understand water-quality conditions.
               </li>
 
               <li>
-                <b>Tools:</b>
-                Python, SQL, Power BI, Pandas
+                <b>Tools:</b> Colorimeters, photometers, incubators,
+                GIS and statistical analysis
               </li>
 
             </ul>
 
           </div>
 
+          <div class="card-action">
+            <span>Water Quality Work | Ghana</span>
+          </div>
+
         </div>
 
-      </div>
 
-
-
-      <!-- Project 5 -->
-      <div class="col s12 m6 l4">
-
-        <div class="card medium">
-
-          <div class="card-image waves-effect waves-block waves-light">
-
-            <img
-              alt="Spatial data project"
-              src="assets/img/project-gis.jpg"
-              style="height: 100%; width: 100%"
-              class="activator" />
-
-          </div>
+        <!-- Data Experience -->
+        <div class="card">
 
           <div class="card-content">
 
-            <span class="card-title activator teal-text hoverline">
+            <div class="row">
 
-              Spatial & GIS Analysis
+              <div class="col s12 m2">
+                <img alt="Data analysis"
+                  src="/assets/img/exp-mtag-logo-250x250.jpg"
+                  class="responsive-img center-block" />
+              </div>
 
-              <i class="mdi-navigation-more-vert right"></i>
+              <div class="col s12 m10">
 
-            </span>
+                <p>
+                  <span class="card-title">
+                    <a href="#experience"
+                      class="teal-text hoverline">
+                      Data Analysis
+                    </a>
+                  </span>
+                </p>
 
-            <p>
-              Spatial analysis and visualisation of environmental
-              and geoscience data.
-            </p>
+              </div>
 
-          </div>
+            </div>
 
-          <div class="card-reveal">
-
-            <span class="card-title grey-text">
-
-              <small>Project Details</small>
-
-              <i class="mdi-navigation-close right"></i>
-
-            </span>
+            <div class="role brown-text text-darken-2">
+              Geoscience Data Analysis
+            </div>
 
             <ul>
 
               <li>
-                Spatial data preparation and analysis.
+                Worked with geochemical and groundwater datasets to
+                identify patterns and relationships between water-quality
+                variables.
               </li>
 
               <li>
-                Thematic cartography.
+                Applied statistical methods, data visualisation and
+                machine-learning approaches to environmental datasets.
               </li>
 
               <li>
-                Spatial relationships and distribution analysis.
+                Used GIS to organise, analyse and visualise spatial
+                variations in groundwater quality.
               </li>
 
               <li>
-                <b>Tools:</b>
-                ArcGIS, GIS, Python
+                <b>Tools:</b> Python, SQL, Power BI, Excel,
+                GIS and statistical analysis
               </li>
 
             </ul>
 
           </div>
 
+          <div class="card-action">
+            <span>Geoscience Data Analysis | Ghana</span>
+          </div>
+
         </div>
 
       </div>
 
+    </section>
 
 
-      <!-- Project 6 -->
-      <div class="col s12 m6 l4">
+    <!-- Fourth Section: Research -->
+    <section id="research" class="section scrollspy">
 
-        <div class="card medium">
+      <h3 class="page-title white-text teal">Research</h3>
 
-          <div class="card-image waves-effect waves-block waves-light">
+      <div class="container">
 
-            <img
-              alt="Environmental data project"
-              src="assets/img/project-environment.jpg"
-              style="height: 100%; width: 100%"
-              class="activator" />
-
-          </div>
+        <div class="card">
 
           <div class="card-content">
 
-            <span class="card-title activator teal-text hoverline">
-
-              Environmental Data Projects
-
-              <i class="mdi-navigation-more-vert right"></i>
-
-            </span>
-
             <p>
-              Small-scale projects exploring environmental datasets
-              using data and geospatial methods.
+              <span class="card-title">
+                <a href="#research" class="teal-text hoverline">
+                  Groundwater Hydrogeochemistry and Health Risk Assessment
+                </a>
+              </span>
             </p>
 
-          </div>
-
-          <div class="card-reveal">
-
-            <span class="card-title grey-text">
-
-              <small>Project Details</small>
-
-              <i class="mdi-navigation-close right"></i>
-
-            </span>
+            <div class="role brown-text text-darken-2">
+              Wassa East, Ghana
+            </div>
 
             <ul>
 
               <li>
-                Environmental dataset exploration.
+                Investigated groundwater quality across the Wassa East
+                area of Ghana using hydrochemical, statistical and
+                spatial approaches.
               </li>
 
               <li>
-                Data visualisation and reporting.
+                The study analysed groundwater from 139 boreholes,
+                examining physicochemical parameters, major ions,
+                trace metals, cyanide and microbiological indicators.
               </li>
 
               <li>
-                Spatial pattern identification.
+                Used Piper, Chadha, Schoeller, Gibbs and Gaillardet
+                diagrams to characterise groundwater chemistry and
+                hydrochemical processes.
               </li>
 
               <li>
-                <b>Tools:</b>
-                Python, GIS, SQL, Power BI
+                Applied principal component analysis, factor analysis
+                and K-means clustering to investigate relationships
+                within the groundwater dataset.
+              </li>
+
+              <li>
+                Developed groundwater quality maps using GIS and
+                inverse distance weighting to examine spatial patterns
+                in water quality.
+              </li>
+
+              <li>
+                Applied entropy and CRITIC weighting methods to develop
+                an integrated water-quality index and assessed potential
+                human-health risks associated with selected contaminants.
               </li>
 
             </ul>
+
+          </div>
+
+          <div class="card-action">
+
+            <span>
+              Published Research | Frontiers in Water | 2026
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <!-- Publication -->
+        <div class="card">
+
+          <div class="card-content">
+
+            <p>
+              <span class="card-title">
+                <a href="#research" class="teal-text hoverline">
+                  Publication
+                </a>
+              </span>
+            </p>
+
+            <p>
+              <b>
+                Understanding the hydrogeochemistry of groundwater quality
+                in Wassa East area of Ghana: implications for health risk assessment
+              </b>
+            </p>
+
+            <p>
+              Seidu J., Obosu K.J., Frimpong K.A., Sebbeh-Newton S.,
+              Mensah E.K., Ewusi A., Benyarku E.
+            </p>
+
+            <p>
+              <i>Frontiers in Water</i>, 2026.
+            </p>
+
+            <p>
+              DOI: 10.3389/frwa.2026.1766598
+            </p>
 
           </div>
 
@@ -1383,174 +644,797 @@
 
       </div>
 
-
-    </div>
-
-  </div>
-
-</section>
+    </section>
 
 
+    <!-- Fifth Section: Skills -->
+    <section id="skills" class="section scrollspy">
 
-<!-- ========================================================= -->
-<!-- FIND ME -->
-<!-- ========================================================= -->
+      <h3 class="page-title white-text teal">Skills</h3>
 
-<section id="findme" class="section scrollspy full-height">
+      <div class="container">
 
-  <h3 class="page-title white-text teal">
-    Find Me
-  </h3>
+        <!-- Programming and Data -->
+        <div class="card">
 
-  <div class="container">
+          <div class="card-content">
 
+            <h4 class="brown-text light">
+              Programming and Data
+            </h4>
 
-    <p>
+            <div class="row text-center">
 
-      <a aria-label="Email Kingchrist"
-        href="mailto:your-email@example.com"
-        target="_blank"
-        data-position="top"
-        data-tooltip="Email"
-        class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/python-logo-1-300x300.jpg"
+                  class="responsive-img" />Python
+              </div>
 
-        <i class="fa fa-envelope"></i>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/mysql-logo-1-300x300.jpg"
+                  class="responsive-img" />SQL
+              </div>
 
-      </a>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/postgresql-logo.png"
+                  class="responsive-img" />PostgreSQL
+              </div>
 
-      <a aria-label="Email Kingchrist"
-        href="mailto:your-email@example.com"
-        class="hoverline">
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/pandas-logo-2-500x500.jpg"
+                  class="responsive-img" />Pandas
+              </div>
 
-        your-email@example.com
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/numpy-logo-1-500x500.jpg"
+                  class="responsive-img" />NumPy
+              </div>
 
-      </a>
+            </div>
 
-    </p>
+          </div>
 
-
-    <p>
-
-      <a aria-label="View Kingchrist on GitHub"
-        href="https://github.com/"
-        target="_blank"
-        data-position="top"
-        data-tooltip="GitHub"
-        class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
-
-        <i class="fa fa-github"></i>
-
-      </a>
-
-      <a aria-label="Kingchrist on GitHub"
-        href="https://github.com/"
-        class="hoverline"
-        target="_blank">
-
-        github.com/
-
-      </a>
-
-    </p>
+        </div>
 
 
-    <p>
+        <!-- Analysis -->
+        <div class="card">
 
-      <a aria-label="View Kingchrist's research"
-        href="#research"
-        data-position="top"
-        data-tooltip="Research"
-        class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
+          <div class="card-content">
 
-        <i class="fa fa-flask"></i>
+            <h4 class="brown-text light">
+              Analysis
+            </h4>
 
-      </a>
+            <div class="row text-center">
 
-      <a aria-label="Research"
-        href="#research"
-        class="hoverline">
+              <div class="col s4 m2">
+                Statistical Analysis
+              </div>
 
-        Research & Publications
+              <div class="col s4 m2">
+                Machine Learning
+              </div>
 
-      </a>
+              <div class="col s4 m2">
+                Data Visualisation
+              </div>
 
-    </p>
+              <div class="col s4 m2">
+                Spatial Analysis
+              </div>
+
+              <div class="col s4 m2">
+                Database & Reporting
+              </div>
+
+              <div class="col s4 m2">
+                Power BI
+              </div>
+
+              <div class="col s4 m2">
+                Excel
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
 
 
-    <p>
+        <!-- Geoscience -->
+        <div class="card">
 
-      <i class="fa fa-map-marker"
-        style="font-size: 28px; margin-left: 8px; margin-right: 18px;">
-      </i>
+          <div class="card-content">
 
-      Ghana
+            <h4 class="brown-text light">
+              Geoscience
+            </h4>
 
-    </p>
+            <div class="row text-center">
+
+              <div class="col s4 m2">
+                GIS
+              </div>
+
+              <div class="col s4 m2">
+                ArcGIS
+              </div>
+
+              <div class="col s4 m2">
+                Geophysical Interpretation
+              </div>
+
+              <div class="col s4 m2">
+                Resistivity
+              </div>
+
+              <div class="col s4 m2">
+                Dipole-Dipole
+              </div>
+
+              <div class="col s4 m2">
+                Magnetotellurics
+              </div>
+
+              <div class="col s4 m2">
+                Borehole Construction
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
 
 
-  </div>
+        <!-- Geological Software -->
+        <div class="card">
 
-</section>
-```
+          <div class="card-content">
+
+            <h4 class="brown-text light">
+              Geological Software
+            </h4>
+
+            <div class="row text-center">
+
+              <div class="col s4 m2">
+                Leapfrog Geo
+              </div>
+
+              <div class="col s4 m2">
+                Rocscience Phase2
+              </div>
+
+              <div class="col s4 m2">
+                GIS / Spatial Analysis
+              </div>
+
+              <div class="col s4 m2">
+                Geochemical Analysis
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Sixth Section: Education -->
+    <section id="education" class="section scrollspy">
+
+      <h3 class="page-title white-text teal">Education</h3>
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col s12 m12 l12">
+
+            <div class="card">
+
+              <div class="card-content">
+
+                <p>
+                  <span class="card-title">
+                    <a href="https://umat.edu.gh/"
+                      target="_blank"
+                      class="teal-text hoverline">
+                      University of Mines and Technology
+                    </a>
+                  </span>
+                </p>
+
+                <p class="brown-text">
+                  Tarkwa, Ghana
+                </p>
+
+                <p>
+                  <b>Degree: </b>
+                  Bachelor of Science in Geological Engineering
+                  <br>
+
+                  <b>Period: </b>
+                  2022 - 2025
+                  <br>
+
+                  <b>Class: </b>
+                  Second Class Upper
+                  <br>
+
+                  <b>CWA: </b>
+                  75.4
+                </p>
+
+                <ul>
+
+                  <p>
+                    <b>Areas of Interest:</b>
+                  </p>
+
+                  <li>
+                    Geochemistry and Hydrogeochemistry
+                  </li>
+
+                  <li>
+                    Exploration Geophysics
+                  </li>
+
+                  <li>
+                    GIS and Geoinformatics
+                  </li>
+
+                  <li>
+                    Environmental and Groundwater Assessment
+                  </li>
+
+                  <li>
+                    Data Analysis and Machine Learning
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Seventh Section: Projects -->
+    <section id="projects" class="section scrollspy">
+
+      <h3 class="page-title white-text teal">Projects</h3>
+
+      <div class="container">
+
+        <div class="row">
+
+          <!-- Project 1 -->
+          <div class="col s12 m6 l4">
+
+            <div class="card medium">
+
+              <div class="card-image waves-effect waves-block waves-light">
+
+                <img alt="Groundwater quality project"
+                  src="/assets/img/project-music-player.png"
+                  style="height: 100%; width: 100%"
+                  class="activator" />
+
+              </div>
+
+              <div class="card-content">
+
+                <span class="card-title activator teal-text hoverline">
+                  Groundwater Quality Assessment
+                  <i class="mdi-navigation-more-vert right"></i>
+                </span>
+
+                <p>
+                  Assessment of groundwater quality using
+                  hydrochemical, statistical and GIS approaches.
+                </p>
+
+              </div>
+
+              <div class="card-reveal">
+
+                <span class="card-title grey-text">
+                  <small>Project Details</small>
+                  <i class="mdi-navigation-close right"></i>
+                </span>
+
+                <ul>
+
+                  <li>
+                    Assessment of physicochemical parameters,
+                    major ions and trace contaminants.
+                  </li>
+
+                  <li>
+                    Hydrochemical classification using
+                    Piper, Chadha and related diagrams.
+                  </li>
+
+                  <li>
+                    Spatial visualisation of groundwater quality
+                    using GIS.
+                  </li>
+
+                  <li>
+                    <b>Tools:</b> Python, GIS, statistical analysis
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Project 2 -->
+          <div class="col s12 m6 l4">
+
+            <div class="card medium">
+
+              <div class="card-image waves-effect waves-block waves-light">
+
+                <img alt="GIS project"
+                  src="/assets/img/project-quizup-logo-1.png"
+                  style="height: 100%; width: 100%"
+                  class="activator" />
+
+              </div>
+
+              <div class="card-content">
+
+                <span class="card-title activator teal-text hoverline">
+                  GIS Groundwater Mapping
+                  <i class="mdi-navigation-more-vert right"></i>
+                </span>
+
+                <p>
+                  Spatial analysis and mapping of groundwater
+                  quality indicators.
+                </p>
+
+              </div>
+
+              <div class="card-reveal">
+
+                <span class="card-title grey-text">
+                  <small>Project Details</small>
+                  <i class="mdi-navigation-close right"></i>
+                </span>
+
+                <ul>
+
+                  <li>
+                    Developed thematic maps for groundwater
+                    quality variables.
+                  </li>
+
+                  <li>
+                    Used spatial interpolation to examine
+                    geographic patterns.
+                  </li>
+
+                  <li>
+                    Integrated geochemical results with
+                    geographic information.
+                  </li>
+
+                  <li>
+                    <b>Tools:</b> ArcGIS, GIS, spatial analysis
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Project 3 -->
+          <div class="col s12 m6 l4">
+
+            <div class="card medium">
+
+              <div class="card-image waves-effect waves-block waves-light">
+
+                <img alt="Data analysis project"
+                  src="/assets/img/project-blog-logo.jpg"
+                  style="height: 100%; width: 100%"
+                  class="activator" />
+
+              </div>
+
+              <div class="card-content">
+
+                <span class="card-title activator teal-text hoverline">
+                  Geoscience Data Analysis
+                  <i class="mdi-navigation-more-vert right"></i>
+                </span>
+
+                <p>
+                  Exploring geoscience datasets through
+                  statistical analysis and visualisation.
+                </p>
+
+              </div>
+
+              <div class="card-reveal">
+
+                <span class="card-title teal-text">
+                  <small>Project Details</small>
+                  <i class="mdi-navigation-close right"></i>
+                </span>
+
+                <ul>
+
+                  <li>
+                    Data cleaning and exploratory analysis.
+                  </li>
+
+                  <li>
+                    Statistical analysis of relationships
+                    between environmental variables.
+                  </li>
+
+                  <li>
+                    Data visualisation for communicating
+                    geoscience results.
+                  </li>
+
+                  <li>
+                    <b>Tools:</b> Python, Pandas, NumPy,
+                    Matplotlib, Power BI
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Project 4 -->
+          <div class="col s12 m6 l4">
+
+            <div class="card medium">
+
+              <div class="card-image waves-effect waves-block waves-light">
+
+                <img alt="Geophysical project"
+                  src="/assets/img/project-aim_bert-bias.png"
+                  style="height: 100%; width: 100%"
+                  class="activator" />
+
+              </div>
+
+              <div class="card-content">
+
+                <span class="card-title activator teal-text hoverline">
+                  Geophysical Interpretation
+                  <i class="mdi-navigation-more-vert right"></i>
+                </span>
+
+                <p>
+                  Subsurface investigation using geophysical
+                  methods for groundwater exploration.
+                </p>
+
+              </div>
+
+              <div class="card-reveal">
+
+                <span class="card-title teal-text">
+                  <small>Project Details</small>
+                  <i class="mdi-navigation-close right"></i>
+                </span>
+
+                <ul>
+
+                  <li>
+                    Worked with resistivity and dipole-dipole
+                    survey data.
+                  </li>
+
+                  <li>
+                    Supported interpretation of subsurface
+                    geological conditions.
+                  </li>
+
+                  <li>
+                    Applied geophysical information to
+                    borehole investigations.
+                  </li>
+
+                  <li>
+                    <b>Tools:</b> Geophysical interpretation,
+                    GIS, Leapfrog Geo
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Project 5 -->
+          <div class="col s12 m6 l4">
+
+            <div class="card medium">
+
+              <div class="card-image waves-effect waves-block waves-light">
+
+                <img alt="Machine learning project"
+                  src="/assets/img/computer-vision-v2-04.png"
+                  style="height: 100%; width: 100%"
+                  class="activator" />
+
+              </div>
+
+              <div class="card-content">
+
+                <span class="card-title activator teal-text hoverline">
+                  Machine Learning for Geoscience
+                  <i class="mdi-navigation-more-vert right"></i>
+                </span>
+
+                <p>
+                  Exploring machine-learning approaches
+                  for environmental and geoscience datasets.
+                </p>
+
+              </div>
+
+              <div class="card-reveal">
+
+                <span class="card-title brown-text">
+                  <small>Project Details</small>
+                  <i class="mdi-navigation-close right"></i>
+                </span>
+
+                <ul>
+
+                  <li>
+                    Applied data preparation and exploratory
+                    analysis to geoscience datasets.
+                  </li>
+
+                  <li>
+                    Explored clustering and predictive
+                    approaches for environmental data.
+                  </li>
+
+                  <li>
+                    <b>Tools:</b> Python, Pandas,
+                    scikit-learn, NumPy
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Project 6 -->
+          <div class="col s12 m6 l4">
+
+            <div class="card medium">
+
+              <div class="card-image waves-effect waves-block waves-light">
+
+                <img alt="Data visualisation project"
+                  src="/assets/img/gan.jpg"
+                  style="height: 100%; width: 100%"
+                  class="activator" />
+
+              </div>
+
+              <div class="card-content">
+
+                <span class="card-title activator teal-text hoverline">
+                  Geoscience Visualisation
+                  <i class="mdi-navigation-more-vert right"></i>
+                </span>
+
+                <p>
+                  Building visual ways to communicate
+                  environmental and geological data.
+                </p>
+
+              </div>
+
+              <div class="card-reveal">
+
+                <span class="card-title brown-text">
+                  <small>Project Details</small>
+                  <i class="mdi-navigation-close right"></i>
+                </span>
+
+                <ul>
+
+                  <li>
+                    Created charts and visual summaries
+                    from geoscience datasets.
+                  </li>
+
+                  <li>
+                    Combined quantitative analysis with
+                    spatial visualisation.
+                  </li>
+
+                  <li>
+                    Focused on making complex datasets
+                    easier to explore and communicate.
+                  </li>
+
+                  <li>
+                    <b>Tools:</b> Python, Matplotlib,
+                    Power BI, GIS
+                  </li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Eighth Section: Find Me -->
+    <section id="contact" class="section scrollspy full-height">
+
+      <h3 class="page-title white-text teal">Find Me</h3>
+
+      <div class="container">
+
+        <p>
+          <a aria-label="Email Kingchrist"
+            href="mailto:"
+            target="_blank"
+            data-position="top"
+            data-tooltip="Email Kingchrist"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
+
+            <i class="fa fa-envelope"></i>
+
+          </a>
+
+          <a aria-label="Email Kingchrist"
+            href="mailto:"
+            class="hoverline">
+            Email
+          </a>
+        </p>
+
+
+        <p>
+
+          <a aria-label="View Kingchrist on GitHub"
+            href="https://github.com/"
+            target="_blank"
+            data-position="top"
+            data-tooltip="View Kingchrist on GitHub"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
+
+            <i class="fa fa-github"></i>
+
+          </a>
+
+          <a aria-label="Kingchrist on GitHub"
+            href="https://github.com/"
+            class="hoverline"
+            target="_blank">
+            github.com
+          </a>
+
+        </p>
+
+
+        <p>
+
+          <a aria-label="View Kingchrist on LinkedIn"
+            href="#"
+            target="_blank"
+            data-position="top"
+            data-tooltip="View Kingchrist on LinkedIn"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped">
+
+            <i class="fa fa-linkedin"></i>
+
+          </a>
+
+          <a aria-label="Kingchrist on LinkedIn"
+            href="#"
+            class="hoverline"
+            target="_blank">
+            LinkedIn
+          </a>
+
+        </p>
+
+      </div>
+
+    </section>
 
   </main>
 
-  <!-- ========================================================= -->
 
-  <!-- TYPED.JS -->
-
-  <!-- ========================================================= -->
-
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <!-- typed.js -->
+  <script src="assets/type/typed.js/typed.min.js"></script>
 
   <script type="text/javascript">
-
-    var typed = new Typed('.typing', {
-
+    var typed = new Typed('.typing',{
       strings: [
-        "groundwater",
-        "hydrogeochemistry",
-        "water–rock interactions",
-        "geophysics",
-        "GIS & spatial analysis",
-        "geoscience data"
+        "Geoscience Researcher",
+        "Geochemist",
+        "Geoscience Data Analyst",
+        "Geophysics Enthusiast"
       ],
-
       loop: true,
-      typeSpeed: 70,
-      backSpeed: 35
-
+      typeSpeed: 80,
+      backSpeed: 40
     });
-
   </script>
 
-  <!-- jQuery -->
 
-  <script
-    src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
-  </script>
+  <!-- jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-  <!-- Materialize JavaScript -->
-
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js">
-  </script>
+  <!-- Materialize - Compiled and minified JavaScript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
 
   <script>
 
+    // Materialize - Initializers
     $(document).ready(function () {
 
-      $(".scrollspy").scrollSpy();
+      $(".scrollspy").scrollSpy()
 
+      // Initialize collapse button
       $(".button-collapse").sideNav({
-
         menuWidth: 190,
         edge: "left",
         closeOnClick: true
+      })
 
-      });
-
-    });
+    })
 
   </script>
 
